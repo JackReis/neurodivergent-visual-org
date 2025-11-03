@@ -1,174 +1,187 @@
-# Neurodivergent Visual Organization
+---
+created: 2025-11-02T22:59
+updated: 2025-11-02T23:06
+---
+# Neurodivergent Visual Organization Skill v2.0
 
-A Claude Code skill that creates visual organizational tools designed for neurodivergent thinking patterns. Transform overwhelming tasks into clear, compassionate, actionable visualizations.
+Upgraded skill for creating ADHD-friendly visual organizational tools using Mermaid diagrams.
 
-## What This Skill Does
+## What's New in v2.0
 
-Creates Mermaid diagrams optimized for neurodivergent brains:
-- **Task Breakdowns** - Turn "this is too much" into 3-10 minute micro-steps
-- **Decision Trees** - Navigate analysis paralysis with structured choices
-- **Project Maps** - See dependencies and phases clearly
-- **Current State Boards** - Know what's on your plate right now
-- **Time-Boxing Tools** - Work with time blindness, not against it
-- **Habit Builders** - Start tiny, build momentum
-- **Accountability Support** - Body doubling and check-in structures
-- **Focus Regulation** - Pre-task calm-down and recovery protocols
+### Major Enhancements
 
-## Core Principles
+1. **Comprehensive Mermaid 11.12.1 Coverage**
+   - Detailed syntax for all 22 diagram types
+   - Working code examples for each type
+   - Platform compatibility warnings (GitHub, Obsidian)
 
-This skill is built on these neurodivergent-friendly principles:
+2. **Research-Backed Design Principles**
+   - Color psychology for ADHD brains
+   - Information density management (Miller's Law + ADHD)
+   - Cognitive load theory applications
+   - Visual hierarchy guidelines
 
-✅ **Compassionate Language** - No "just do it" or "should be easy"
-✅ **Realistic Time Estimates** - Includes buffer time and energy costs
-✅ **Micro-Steps** - 3-10 minute chunks that feel doable
-✅ **Anti-Perfectionism** - "Done" is concrete and achievable
-✅ **Energy-Aware** - Acknowledges spoons, not just time
-✅ **Progress Celebration** - Starting counts, not just finishing
-✅ **Permission to Modify** - You can change these tools
+3. **Expanded Diagram Selection**
+   - Organized by cognitive need (not just task type)
+   - Executive function & task management
+   - Decision-making & prioritization
+   - Time & energy management
+   - Habits & routines
+   - Systems & processes
+
+4. **Comprehensive Troubleshooting**
+   - Common syntax errors with solutions
+   - Version compatibility notes
+   - Special character handling
+   - Configuration gotchas
+
+5. **Detailed Example Scenarios**
+   - 6 complete workflow examples
+   - Task initiation paralysis
+   - Decision paralysis
+   - Multiple task overwhelm
+   - Time blindness struggle
+   - Habit building difficulty
+   - Energy management (spoon theory)
+
+6. **Anti-Patterns Section**
+   - Design, language, process, and technical anti-patterns
+   - Clear "do not do" guidelines
+
+7. **Scientific Foundation**
+   - Documents ADHD neuroscience basis
+   - Visual processing research
+   - Cognitive load theory
+   - WCAG accessibility guidelines
 
 ## Installation
 
-### For Claude Code Users
+### For Claude.ai Desktop (MCP Skills)
 
-1. Install the superpowers plugin (if not already installed):
-```bash
-# In Claude Code
-/plugin marketplace add obra/superpowers-marketplace
-/plugin install superpowers@superpowers-marketplace
+1. Locate your skills directory (usually `~/Library/Application Support/Claude/skills/user/`)
+2. Backup existing `neurodivergent-visual-org` folder (if present)
+3. Copy the `neurodivergent-visual-org-v2` folder contents to:
+   - `~/Library/Application Support/Claude/skills/user/neurodivergent-visual-org/`
+4. Restart Claude.ai Desktop app
+5. Skill will be automatically available
+
+### For Manual Use
+
+Simply reference the `SKILL.md` file when creating ADHD-friendly visualizations. The reference files in the `references/` directory provide additional patterns and examples.
+
+## Package Contents
+
+```
+neurodivergent-visual-org-v2/
+├── SKILL.md                          # Main skill file with comprehensive guide
+├── README.md                         # This file
+└── references/                       # Additional pattern libraries
+    ├── accountability-support.md      # Body doubling, check-ins, crisis protocols
+    ├── current-state-boards.md        # Kanban, priority matrices, context tracking
+    ├── decision-tools.md              # Decision trees, weighted matrices
+    ├── focus-regulation.md            # Pre-task calm-down, sensory tools, recovery
+    ├── habit-building.md              # Tiny habits, routine sequences, stacking
+    ├── project-maps.md                # Phase maps, dependency diagrams
+    ├── task-breakdowns.md             # Linear timelines, branching breakdowns
+    └── time-boxing.md                 # Pomodoro, time-blocked days, energy mapping
 ```
 
-2. Add this skill to your superpowers skills directory:
-```bash
-cd ~/.claude/plugins/cache/superpowers/skills/
-git clone https://github.com/JackReis/neurodivergent-visual-org.git
-```
+## Quick Start
 
-3. Restart Claude Code or reload plugins
+The skill activates when users:
+- Feel overwhelmed by tasks
+- Experience decision paralysis
+- Need to break down complex projects
+- Struggle with time blindness
+- Want to track habits or energy
+- Need visual organization tools
 
-### Manual Installation
+### Example Usage
 
-Copy the skill directory to your Claude Code plugins:
-```bash
-cp -r neurodivergent-visual-org ~/.claude/plugins/cache/superpowers/skills/
-```
+**User:** "I need to clean my apartment but it's so messy I don't know where to start"
 
-## Usage
+**Skill Response:**
+1. Recognizes task initiation paralysis
+2. Creates flowchart or timeline breaking cleaning into 10-15 minute chunks
+3. Starts with "quick wins" for visible progress
+4. Uses calming color theme
+5. Includes validation and encouragement
+6. Renders with Mermaid tool
+7. Offers to save to Obsidian
 
-The skill activates automatically when you express needs like:
-- "I don't know where to start"
-- "This task is overwhelming"
-- "I'm stuck between options"
-- "What should I focus on?"
-- "I have too many things"
+## Key Principles
 
-You can also invoke it explicitly:
-```
-/skill neurodivergent-visual-org
-```
+- **Compassionate language** (never "just" or "should")
+- **Realistic time estimates** (1.5-2x normal estimates)
+- **Energy awareness** (acknowledge spoon theory)
+- **Micro-steps** (3-10 minute tasks)
+- **Permission statements** (combat perfectionism)
+- **Celebrate starting** (not just finishing)
+- **3-5 information chunks** per section (working memory)
+- **Calming colors** (blues, greens, muted tones)
 
-## Examples
+## Mermaid Quick Reference
 
-### Task Breakdown Example
+### Most Useful Diagram Types for ADHD
 
-**You:** "I need to clean my apartment but it's so messy I don't know where to start"
+| Need | Diagram Type |
+|------|--------------|
+| "I don't know where to start" | Flowchart (decision tree) |
+| "This is overwhelming" | Timeline or Gantt chart |
+| "I can't decide" | Quadrant chart (Eisenhower Matrix) |
+| "What should I focus on?" | Quadrant chart or Pie chart |
+| "Time disappears" | Timeline (make time visible) |
+| "No energy" | Pie or Sankey (spoon theory) |
+| "Build a habit" | Flowchart or User journey |
 
-**Claude generates:**
-```mermaid
-gantt
-    title Apartment Cleaning - 15 Min Phases
-    dateFormat HH:mm
-    axisFormat %H:%M
+### Cognitive Load Limits
 
-    section Quick Wins (Start Here!)
-    Grab visible trash + cups          :milestone, 09:00, 3m
-    Collect dishes to kitchen          :09:03, 5m
+- **Flowcharts**: 15-20 nodes maximum
+- **Mindmaps**: 3-4 levels deep
+- **Pie charts**: 6-8 slices
+- **Lists**: 2 lists × 3-5 items max
+- **Sections**: 3-5 per diagram
 
-    section Kitchen (⚡ Medium Energy)
-    Load dishwasher                    :09:08, 8m
-    Wipe counters                      :09:16, 5m
+### Recommended Themes
 
-    section Living Room (☕ Break After)
-    Clear coffee table                 :09:21, 7m
-    Vacuum main area                   :09:28, 10m
-```
+- `forest` - Calming green-based
+- `neutral` - Muted earth tones
+- Both reduce visual overstimulation
 
-### Decision Tree Example
+## Troubleshooting
 
-**You:** "Should I take this new job offer or stay at my current job?"
+### Common Issues
 
-**Claude generates:** A weighted decision matrix showing both options scored across your priorities (salary, work-life balance, growth opportunities, commute, etc.) with space to add your own weights.
+**Diagram won't render**
+- Check indentation consistency (mindmaps, composites)
+- Avoid lowercase "end" as state name (use "End" or "END")
+- Verify coordinates are 0-1 for quadrant charts
+- Remove `::icon()` syntax for GitHub compatibility
 
-### Current State Board Example
+**Colors not working**
+- Use YAML frontmatter for Sankey config (not directives)
+- Remember pie chart colors assigned by size, not order
 
-**You:** "I have too many things on my plate and can't figure out what to do first"
+**Events missing in timeline**
+- All events before first `section` are ignored
+- Add section before any timeline events
 
-**Claude generates:** A triage flowchart that sorts tasks into "truly urgent", "important but not urgent", "maybe later", and "need clarity" with specific next actions for each category.
+## Support & Resources
 
-## Pattern Types
+- **Reddit r/ADHD** - Community-shared patterns
+- **ADDitude Magazine** - Research-backed strategies  
+- **CHADD** - Evidence-based resources
+- **Mermaid Live Editor** - mermaid.live for testing
 
-### 8 Reference Libraries Included
+## Version History
 
-1. **task-breakdowns.md** - Linear timelines, branching breakdowns, energy-aware sequences
-2. **decision-tools.md** - Decision trees, weighted matrices, elimination filters
-3. **project-maps.md** - Phase maps, dependency diagrams, MVP breakdowns
-4. **current-state-boards.md** - Kanban boards, priority matrices, context tracking
-5. **time-boxing.md** - Pomodoro technique, time-blocked days, energy mapping
-6. **habit-building.md** - Tiny habits, routine sequences, habit stacking
-7. **accountability-support.md** - Body doubling, check-ins, support networks
-8. **focus-regulation.md** - Pre-task calm-down, sensory tools, recovery protocols
-
-## Who This Is For
-
-This skill is designed for:
-- People with ADHD, autism, or other neurodivergent conditions
-- Anyone experiencing executive dysfunction
-- People with time blindness or decision paralysis
-- Anyone who feels overwhelmed by tasks or projects
-- People building habits or routines
-- Anyone who needs external structure for focus
-
-## Contributing
-
-This skill was created to help the neurodivergent community. Contributions are welcome!
-
-### Ways to Contribute
-
-- **Report Issues** - Found a pattern that doesn't work? Let us know.
-- **Suggest Patterns** - Have a visualization that helps you? Share it!
-- **Improve Language** - Help make the skill more compassionate and accessible.
-- **Add Examples** - Real-world examples help others.
-
-### Contributing to Superpowers Marketplace
-
-To contribute this skill to the official superpowers plugin:
-
-1. Fork the [superpowers-marketplace](https://github.com/obra/superpowers-marketplace) repository
-2. Add this skill to the `skills/` directory
-3. Submit a pull request
-4. Follow the superpowers contribution guidelines
+- **v2.0** - Comprehensive Mermaid syntax, research-backed design, troubleshooting
+- **v1.0** - Initial release with basic patterns
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Built with compassion for the neurodivergent community. Special thanks to:
-- The ADHD and autism communities for sharing what actually helps
-- The Claude Code team for building an accessible AI development environment
-- The superpowers plugin for creating a framework for shareable skills
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/JackReis/neurodivergent-visual-org/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/JackReis/neurodivergent-visual-org/discussions)
-
-## Related Resources
-
-- [Superpowers Plugin](https://github.com/obra/superpowers-marketplace)
-- [Claude Code](https://claude.ai/code)
-- [Mermaid Diagram Syntax](https://mermaid.js.org/)
+This skill incorporates research from neuroscience, cognitive psychology, and ADHD communities. Use freely and adapt to your needs.
 
 ---
 
-**Remember:** There's no "right" way to use these tools. Adapt them to what works for your brain. Starting is the hardest part, and you're already here. 💙
+**Remember**: Visual tools work WITH ADHD brain wiring, not against it. These diagrams externalize executive function and make the invisible visible.
