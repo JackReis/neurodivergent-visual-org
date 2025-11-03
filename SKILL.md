@@ -1,10 +1,11 @@
 ---
 name: neurodivergent-visual-org
 description: Create visual organizational tools (mind maps, task breakdowns, decision trees, kanban boards, project timelines) designed for neurodivergent thinking patterns. Use when users feel overwhelmed, need to break down tasks, navigate decisions, see dependencies, or track current state. Emphasizes compassionate language, realistic time estimates, energy-aware planning, and anti-perfectionism.
-version: 2
-mermaid_version: 11.12.1
-created: 2025-11-02T22:58
-updated: 2025-11-02T23:06
+metadata:
+  version: 3.0
+  mermaid_version: 11.12.1
+  created: 2025-11-03T00:28
+  updated: 2025-11-03T01:36
 ---
 
 ## Mode System (v3.0)
