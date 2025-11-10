@@ -5,8 +5,8 @@ metadata:
   version: 3.1
   mermaid_version: 11.12.1
   created: 2025-11-03T00:28
-  updated: 2025-11-04T20:12
-  changes_v3.1: Added colorblind-safe and monochrome accessibility modes
+  updated: 2025-11-10T12:00
+  changes_v3.1: Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for proper HTML entity handling.
 created: 2025-11-03T00:28
 updated: 2025-11-04T22:19
 ---
@@ -1512,8 +1512,8 @@ If angle brackets appear as literal text in the rendered diagram, the URL encodi
 
 ## Version History
 
-- **v3.0.1** (Current): Fixed playground link URL encoding for `<br/>` tags and other HTML entities. Added comprehensive URL encoding guidance and checklist item.
-- **v3.0** : Mode system (neurodivergent/neurotypical/auto-detect), configuration file support, enhanced accessibility features
+- **v3.1** (Current): Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for `<br/>` tags and other HTML entities. Mode system supports neurodivergent/neurotypical base modes combined with optional accessibility modes. Configuration file support for personalized defaults.
+- **v3.0**: Mode system (neurodivergent/neurotypical/auto-detect), configuration file support, enhanced accessibility features
 - **v2.0**: Comprehensive Mermaid 11.12.1 syntax, research-backed neurodivergent design principles, troubleshooting guide, expanded diagram types
 - **v1.0**: Initial release with basic patterns and reference files
 
