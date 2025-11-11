@@ -7,8 +7,6 @@ metadata:
   created: 2025-11-03T00:28
   updated: 2025-11-10T12:00
   changes_v3.1: Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for proper HTML entity handling.
-created: 2025-11-03T00:28
-updated: 2025-11-04T22:19
 ---
 
 ## Mode System (v3.1)
