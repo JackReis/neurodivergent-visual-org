@@ -2,11 +2,13 @@
 name: neurodivergent-visual-org
 description: Create visual organizational tools (mind maps, task breakdowns, decision trees, kanban boards, project timelines) designed for neurodivergent thinking patterns. Use when users feel overwhelmed, need to break down tasks, navigate decisions, see dependencies, or track current state. Emphasizes compassionate language, realistic time estimates, energy-aware planning, and anti-perfectionism. v3.1 adds colorblind-safe and monochrome accessibility modes.
 metadata:
-  version: 3.1
+  version: 3.1.1
   mermaid_version: 11.12.1
   created: 2025-11-03T00:28
-  updated: 2025-11-10T12:00
-  changes_v3.1: Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for proper HTML entity handling.
+  updated: 2025-11-10T18:00
+  changes_v3.1.1: Generalized examples from declutter-specific to universal decision-making patterns for broader applicability.
+created: 2025-11-03T00:28
+updated: 2025-11-10T21:48
 ---
 
 ## Mode System (v3.1)
@@ -69,7 +71,7 @@ This skill supports four modes to adapt to different cognitive styles and access
 |--------|---------------------|-----------------|
 | Color usage | Redundant (patterns + color) | Pure B&W only (#000/#fff) |
 | Border patterns | Dashed/dotted variations | Solid/dashed/dotted styles |
-| Text labels | Prefixed ([KEEP], [DONATE]) | Verbose ([✓ KEEP], [? MAYBE]) |
+| Text labels | Prefixed ([YES], [NO]) | Verbose ([✓ YES], [? MAYBE]) |
 | Shape coding | Diamond/hexagon/trapezoid | Distinct geometric shapes |
 | Fill patterns | N/A (white fill, patterned borders) | Solid/crosshatch/dots/white |
 | Border thickness | 1-3px for hierarchy | 1-3px for hierarchy |
@@ -182,22 +184,22 @@ apply_modes(base_mode=base_mode, accessibility_mode=accessibility_mode)
 ```mermaid
 %%{init: {'theme':'base'}}%%
 flowchart TD
-    Keep["[✅ KEEP] Item"]
-    Donate["[📦 DONATE] Item"]
-    Maybe["[🤔 MAYBE] Item"]
+    Yes["[✅ YES] Approved"]
+    No["[📦 NO] Declined"]
+    Maybe["[🤔 MAYBE] Uncertain"]
     Break["[🛑 BREAK] Rest"]
 
-    style Keep fill:#ffffff,stroke:#000000,stroke-width:3px,stroke-dasharray: 5 5
-    style Donate fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray: 10 5
+    style Yes fill:#ffffff,stroke:#000000,stroke-width:3px,stroke-dasharray: 5 5
+    style No fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray: 10 5
     style Maybe fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray: 2 2
     style Break fill:#ffffff,stroke:#000000,stroke-width:3px,stroke-dasharray: 1 4
 ```
 
 **Pattern Legend:**
-- `stroke-dasharray: 5 5` - Short dashes (KEEP items, positive actions)
-- `stroke-dasharray: 10 5` - Long dashes (DONATE items, external actions)
-- `stroke-dasharray: 2 2` - Dots (MAYBE items, uncertain states)
-- `stroke-dasharray: 1 4` - Dot-dash (BREAK items, pauses)
+- `stroke-dasharray: 5 5` - Short dashes (YES/positive actions)
+- `stroke-dasharray: 10 5` - Long dashes (NO/negative actions)
+- `stroke-dasharray: 2 2` - Dots (MAYBE/uncertain states)
+- `stroke-dasharray: 1 4` - Dot-dash (BREAK/pauses)
 - `stroke-width: 3px` - Critical importance
 - `stroke-width: 2px` - Standard importance
 - `stroke-width: 1px` - Detail level
@@ -210,8 +212,8 @@ flowchart TD
 - `>text]` - Asymmetric: External dependencies
 
 **Text Prefix System:**
-- `[✅ KEEP]` - Items to keep
-- `[📦 DONATE]` - Items to donate/give away
+- `[✅ YES]` - Approved/positive decision
+- `[❌ NO]` - Declined/negative decision
 - `[🤔 MAYBE]` - Uncertain decisions
 - `[🛑 BREAK]` - Rest/break required
 - `[⚠️ CRITICAL]` - Critical deadline or warning
@@ -267,8 +269,8 @@ flowchart TD
 
 **Text Prefix System (Verbose):**
 - `[★ CRITICAL DEADLINE]` - Critical with visual marker
-- `[✓ KEEP]` - Text checkmark
-- `[→ DONATE]` - Text arrow
+- `[✓ YES]` - Text checkmark (approved)
+- `[✗ NO]` - Text X (declined)
 - `[? MAYBE]` - Text question mark
 - `[■ BREAK]` - Text square (stop sign)
 - `[○ START]` - Text circle
@@ -307,20 +309,20 @@ flowchart TD
 %%{init: {'theme':'base'}}%%
 flowchart TD
     Start(["[○ START] Decision time<br/>(Take 3 seconds max)"])
-    Q1{"[? DECIDE]<br/>Do I love it?<br/>(Not obligated)"}
-    Keep["[✓ KEEP]<br/>Pack for move<br/>(Fits in new space)"]
-    Donate["[→ DONATE]<br/>Helps someone else<br/>(Guilt-free)"]
+    Q1{"[? DECIDE]<br/>Does this align<br/>with my goals?<br/>(Be honest)"}
+    Yes["[✓ YES]<br/>Proceed with action<br/>(Trust your judgment)"]
+    No["[✗ NO]<br/>Skip this option<br/>(That's okay)"]
     Break["[■ BREAK]<br/>Rest 10 min<br/>(Decision fatigue signal)"]
 
     Start --> Q1
-    Q1 -->|YES| Keep
-    Q1 -->|NO| Donate
+    Q1 -->|YES| Yes
+    Q1 -->|NO| No
     Q1 -->|UNSURE| Break
 
     style Start fill:#ffffff,stroke:#000000,stroke-width:3px
     style Q1 fill:#ffffff,stroke:#000000,stroke-width:2px
-    style Keep fill:#ffffff,stroke:#000000,stroke-width:3px,stroke-dasharray: 5 5
-    style Donate fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray: 10 5
+    style Yes fill:#ffffff,stroke:#000000,stroke-width:3px,stroke-dasharray: 5 5
+    style No fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray: 10 5
     style Break fill:#000000,stroke:#000000,stroke-width:3px,color:#ffffff
 ```
 *This example shows: Neurodivergent language (compassionate, with parenthetical reassurance) + Monochrome visual encoding (B&W with patterns)*
@@ -371,8 +373,8 @@ neurotypical_customizations:
 
 # Colorblind-safe mode customizations
 colorblind_safe_patterns:
-  keep: "short-dash"            # Options: short-dash, long-dash, dots, dot-dash, solid
-  donate: "long-dash"
+  positive: "short-dash"        # Options: short-dash, long-dash, dots, dot-dash, solid
+  negative: "long-dash"
   maybe: "dots"
   break: "dot-dash"
   critical: "solid"
@@ -1510,7 +1512,8 @@ If angle brackets appear as literal text in the rendered diagram, the URL encodi
 
 ## Version History
 
-- **v3.1** (Current): Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for `<br/>` tags and other HTML entities. Mode system supports neurodivergent/neurotypical base modes combined with optional accessibility modes. Configuration file support for personalized defaults.
+- **v3.1.1** (Current): Generalized examples from declutter-specific (keep/donate) to universal decision-making patterns (yes/no/maybe) for broader applicability across all contexts.
+- **v3.1**: Added colorblind-safe and monochrome accessibility modes with pattern-based differentiation. Fixed playground link URL encoding for `<br/>` tags and other HTML entities. Mode system supports neurodivergent/neurotypical base modes combined with optional accessibility modes. Configuration file support for personalized defaults.
 - **v3.0**: Mode system (neurodivergent/neurotypical/auto-detect), configuration file support, enhanced accessibility features
 - **v2.0**: Comprehensive Mermaid 11.12.1 syntax, research-backed neurodivergent design principles, troubleshooting guide, expanded diagram types
 - **v1.0**: Initial release with basic patterns and reference files
