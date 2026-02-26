@@ -15,3 +15,6 @@ This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
   - Published to → Obsidian community plugin directory
   - Showcased in → `jackdotdigital` portfolio (`/Users/jack.reis/Documents/jackdotdigital/`)
   - Automated by → `tonkotsu-automation` (`/Users/jack.reis/Documents/tonkotsu-automation/`)
+
+## Repository Remote Policy
+- Repo policy: GitHub is primary `origin` and CI/CD source; GitLab is backup remote (`gitlab`) with GitLab CI disabled.
