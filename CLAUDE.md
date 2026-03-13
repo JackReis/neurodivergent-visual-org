@@ -39,3 +39,8 @@ This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
 - Any capability change must include usage docs/examples.
 - Keep plugin/skill APIs stable where possible; note breaking changes explicitly.
 - Preserve provider-agnostic interfaces and adapter boundaries.
+
+## Local Overrides — Command Truth
+- No canonical scripts currently declared in `package.json`.
+- Validation minimum: plugin docs and contract consistency checks.
+- Add explicit `lint/test/build` commands before expanding CI beyond Repo Health.
