@@ -44,3 +44,6 @@ This repo is part of an 18-repo portfolio coordinated from the `=notes` vault.
 - No canonical scripts currently declared in `package.json`.
 - Validation minimum: plugin docs and contract consistency checks.
 - Add explicit `lint/test/build` commands before expanding CI beyond Repo Health.
+
+## SESSION LOGGING
+Mandatory Requirement: Maintain immaculate session logs across ALL repositories in the ecosystem. Every session must result in a detailed log in 'logs/sessions/YYYY-MM/' (or the repository's designated log directory), capturing objectives, achievements, changes committed, and next actions. This is a core responsibility of both Neo (Orchestrator) and PT (Lead Engineer) to preserve context and ensure seamless multi-session coordination.
