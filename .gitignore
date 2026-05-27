@@ -19,3 +19,4 @@
 # Temporary files
 *.tmp
 .cache/
+.gitnexus
