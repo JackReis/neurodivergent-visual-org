@@ -36,7 +36,7 @@
       "skills": [
         "./skills/neurodivergent-visual-org"
       ],
-      "strict": false
+      "strict": true
     }
   ]
 }
