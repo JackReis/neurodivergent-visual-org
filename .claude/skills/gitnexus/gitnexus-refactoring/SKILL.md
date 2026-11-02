@@ -1,7 +1,11 @@
 ---
 name: gitnexus-refactoring
-description: "Use when the user wants to rename, extract, split, move, or restructure code safely. Examples: \"Rename this function\", \"Extract this into a module\", \"Refactor this class\", \"Move this to a separate file\""
+description: "Optional GitNexus workflow. Use only when the user explicitly requests GitNexus; never a prerequisite for ordinary code work."
 ---
+
+## Optional scope
+
+Use this skill only when the user explicitly requests GitNexus. It is not a prerequisite for exploring, editing, refactoring, reviewing, or committing code. Do not invoke it or reindex automatically. Otherwise, trace direct callers and imports in source, inspect the diff, and run the relevant normal tests and checks.
 
 # Refactoring with GitNexus
 

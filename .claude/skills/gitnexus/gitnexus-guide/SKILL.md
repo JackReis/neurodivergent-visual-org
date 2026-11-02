@@ -1,15 +1,19 @@
 ---
 name: gitnexus-guide
-description: "Use when the user asks about GitNexus itself — available tools, how to query the knowledge graph, MCP resources, graph schema, or workflow reference. Examples: \"What GitNexus tools are available?\", \"How do I use GitNexus?\""
+description: "Optional GitNexus workflow. Use only when the user explicitly requests GitNexus; never a prerequisite for ordinary code work."
 ---
+
+## Optional scope
+
+Use this skill only when the user explicitly requests GitNexus. It is not a prerequisite for exploring, editing, refactoring, reviewing, or committing code. Do not invoke it or reindex automatically. Otherwise, trace direct callers and imports in source, inspect the diff, and run the relevant normal tests and checks.
 
 # GitNexus Guide
 
 Quick reference for all GitNexus MCP tools, resources, and the knowledge graph schema.
 
-## Always Start Here
+## For an Explicitly Requested GitNexus Session
 
-For any task involving code understanding, debugging, impact analysis, or refactoring:
+When the user explicitly chooses GitNexus for code understanding, debugging, impact analysis, or refactoring:
 
 1. **Read `gitnexus://repo/{name}/context`** — codebase overview + check index freshness
 2. **Match your task to a skill below** and **read that skill file**
