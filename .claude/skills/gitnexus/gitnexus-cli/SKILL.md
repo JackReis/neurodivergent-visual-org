@@ -1,7 +1,11 @@
 ---
 name: gitnexus-cli
-description: "Use when the user needs to run GitNexus CLI commands like analyze/index a repo, check status, clean the index, generate a wiki, or list indexed repos. Examples: \"Index this repo\", \"Reanalyze the codebase\", \"Generate a wiki\""
+description: "Optional GitNexus workflow. Use only when the user explicitly requests GitNexus; never a prerequisite for ordinary code work."
 ---
+
+## Optional scope
+
+Use this skill only when the user explicitly requests GitNexus. It is not a prerequisite for exploring, editing, refactoring, reviewing, or committing code. Do not invoke it or reindex automatically. Otherwise, trace direct callers and imports in source, inspect the diff, and run the relevant normal tests and checks.
 
 # GitNexus CLI Commands
 
