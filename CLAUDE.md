@@ -1,3 +1,7 @@
+<!-- FLEET-CANON-POINTER:begin -->
+> **Fleet Canon (`canon_version: 1`):** This repo follows the fleet's operating contract, which is kept in the private fleet vault. Agents with vault access load it from there; it is not reproduced in this public repo.
+<!-- FLEET-CANON-POINTER:end -->
+
 ## Inheritance Model (Folder-First)
 
 This repository inherits operational policy from:
